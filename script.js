@@ -1,3 +1,4 @@
+
 // animation de la keyframe neon
 let names = document.querySelector('.name')
 setTimeout(()=>{
@@ -7,7 +8,7 @@ setTimeout(()=>{
 
 // applique le style neon a tous les h1
 let titre = document.querySelectorAll(".titre")
-console.log(titre);
+// console.log(titre);
 if (titre.length > 0) {
     for (h1 = 0; h1 < titre.length; h1++) {
         titre[h1].style.animation = 'neon 3s both';
@@ -36,7 +37,7 @@ window.addEventListener('scroll', execute)
 function execute(){
     let hauteur = document.documentElement.scrollTop;
     let innerHeight = window.innerHeight
-    console.log(hauteur, 'nombre de pixels depuis le haut de la page');
+    // console.log(hauteur, 'nombre de pixels depuis le haut de la page');
     
     // scroll section profil
 
@@ -55,53 +56,27 @@ function execute(){
     } 
 
     // scroll section compétences
-
     if (hauteur > innerHeight * 2) {
         for(i = 0; i < figures.length; i++) {
             figures[i].style.animation = `competence 1s ${0.1 + (0.5*i)}s both`;     
         }
+    }
+    
+    let projets = document.querySelectorAll('.grid-projets > a ');
+    console.log(projets);
+    if ( hauteur > innerHeight * 3) {
+
+        for (t = 0; t < projets.length; t++) {
+
+            projets[t].style.animation = 'roll-in-right 0.7s  ease-out both';
+        }
+        
     }
 }
 
 
 
 
-
-// const audioContext = new AudioContext();
-// const element = document.querySelector(audio);
-// const source = audioContext.createMediaElementSource(element);
-// source.connect(audioContext.destination)
-// audio.play();
-// const music = new Audio('audio\home.mp3');
-// music.play();
-// music.loop =true;
-// music.playbackRate = 2;
-// music.pause();qqazszdgfbgtyj
-
-
-// var onChangeSound = new Sound("audio/home.mp3");
-// var Sound = function(src)
-// {
-//     var sound = document.createElement("audio");
- 
-//     sound.src = src;
-//     sound.setAttribute("preload", "auto");
-//     sound.setAttribute("controls", "none");
-//     sound.style.display = "none";
-//     document.body.appendChild(sound);
- 
-//     this.play = function()
-//     {
-//         sound.pause();
-//         sound.currentTime = 0;
-//         sound.play();
-//         console.log(src + " is playing");
-//     }
-//     this.stop = function()
-//     {
-//         sound.stop();
-//     }
-// }
 
 
 

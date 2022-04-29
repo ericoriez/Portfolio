@@ -101,9 +101,10 @@ html{
                       
                         }
                     }
-                    audio {
+                    audio{
                       margin-top: 5rem;
                       width: 100%;
+                      color: #E9E128;
                     }
                 }
             }
@@ -164,10 +165,8 @@ html{
                 }
                 
                 p{
-                  // height: 30vh;
                   width: 40vw;
                   font-size: 30px;
-                        
                       }
                 }
             }
@@ -204,18 +203,15 @@ html{
                         font-family: 'barcaderegular';
                         
                     }
-                    #grid-projets {
+                    .grid-projets {
                       display: grid;
                       grid-template-columns: repeat(2, 1fr);
                       grid-gap: 50px;
                       a{
+                        opacity: 0;
                         width: 200px;
                         height: 200px;
                         background-color: #22abcaca;
-                        img{
-
-                        }
-
                       }
                     }
                   }
@@ -429,6 +425,18 @@ html{
   100% {
     transform: scale(1);
     animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+// animation roll de la gauche au centre des images projets 
+@keyframes roll-in-right {
+  0% {
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
     opacity: 1;
   }
 }

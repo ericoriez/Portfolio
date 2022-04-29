@@ -104,6 +104,7 @@ html body header nav ul li a:hover {
 html body header nav ul audio {
   margin-top: 5rem;
   width: 100%;
+  color: #E9E128;
 }
 
 html body header .name {
@@ -187,7 +188,7 @@ html body main #section-projets div h1 {
   font-family: 'barcaderegular';
 }
 
-html body main #section-projets div #grid-projets {
+html body main #section-projets div .grid-projets {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -195,7 +196,8 @@ html body main #section-projets div #grid-projets {
   grid-gap: 50px;
 }
 
-html body main #section-projets div #grid-projets a {
+html body main #section-projets div .grid-projets a {
+  opacity: 0;
   width: 200px;
   height: 200px;
   background-color: #22abcaca;
@@ -635,6 +637,32 @@ html body footer #container-footer {
             transform: scale(1);
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes roll-in-right {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+            transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes roll-in-right {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+            transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
     opacity: 1;
   }
 }
