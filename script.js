@@ -41,7 +41,7 @@ function execute(){
     
     // scroll section profil
 
-    if(hauteur > innerHeight && lancer) {
+    if(hauteur >= innerHeight && lancer) {
         let Write = function write(){
             let elem = document.getElementById('text-profil');
             elem.textContent = elem.textContent + text.charAt(lettre);
@@ -56,7 +56,7 @@ function execute(){
     } 
 
     // scroll section compétences
-    if (hauteur > innerHeight * 2) {
+    if (hauteur >= innerHeight * 2) {
         for(i = 0; i < figures.length; i++) {
             figures[i].style.animation = `competence 1s ${0.1 + (0.5*i)}s both`;     
         }
@@ -64,7 +64,7 @@ function execute(){
     
     let projets = document.querySelectorAll('.grid-projets > a ');
     console.log(projets);
-    if ( hauteur > innerHeight * 3) {
+    if ( hauteur >= innerHeight * 3) {
 
         for (t = 0; t < projets.length; t++) {
 
@@ -74,6 +74,21 @@ function execute(){
     }
 }
 
+
+let footer = document.querySelector('#container-footer');
+
+let drop_count = 800;
+
+for (let i = 0; i < drop_count; i++) {
+    let span = document.createElement('span');
+    span.classList.add('rain');
+    footer.appendChild(span);
+    span.style.left = Math.random()*footer.getBoundingClientRect().width - 5 + 'px';
+    span.style.top = Math.random()* - 0 + 'px';
+    span.style.width = Math.random()*3.5 + 'px';
+    span.style.animationDuration = Math.random()* 20 + 's';
+    span.style.animationDelay = Math.random()* - 20 + 's';
+}
 
 
 
