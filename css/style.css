@@ -47,9 +47,7 @@ html body {
 
 html body header {
   height: 100vh;
-  background-image: url(/img/wmanxd03wp031.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background: center/cover no-repeat url(/img/wmanxd03wp031.jpg);
 }
 
 html body header nav {
@@ -103,7 +101,7 @@ html body header nav ul li a:hover {
 }
 
 html body header nav ul .fa-solid.fa-music {
-  font-size: 4vw;
+  font-size: 2vw;
   margin: 10px;
 }
 
@@ -118,21 +116,11 @@ html body header nav ul .fa-solid.fa-play:hover {
 }
 
 html body header nav ul .fa-solid.fa-pause {
-  font-size: 2vw;
+  font-size: 2.3vw;
   margin: 5px;
 }
 
 html body header nav ul .fa-solid.fa-pause:hover {
-  color: #E9E128;
-  text-shadow: 1px 2px 2px #0e0e0e, 0 0 1em #52f401, 0 0 0.2em #d0e10e;
-}
-
-html body header nav ul .fa-solid.fa-stop {
-  font-size: 2vw;
-  margin: 5px;
-}
-
-html body header nav ul .fa-solid.fa-stop:hover {
   color: #E9E128;
   text-shadow: 1px 2px 2px #0e0e0e, 0 0 1em #52f401, 0 0 0.2em #d0e10e;
 }

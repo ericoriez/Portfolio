@@ -1,4 +1,3 @@
-
 // animation de la keyframe neon
 let names = document.querySelector('.name')
 setTimeout(()=>{
@@ -14,15 +13,6 @@ if (titre.length > 0) {
         titre[h1].style.animation = 'neon 3s both';
     }
 }
-
-// let imgHtml = document.getElementById('html');
-// let imgCss = document.getElementById('css');
-// let imgJs = document.getElementById( 'js');
-// let imgPhp = document.getElementById('php');
-// let imgMySql = document.getElementById('mysql');
-// let imgGit = document.getElementById('git');
-// let imgNodeJs = document.getElementById('node');
-// let imgSass = document.getElementById('sass');
 
 let figures = document.querySelectorAll('figure > img');
 
@@ -91,6 +81,31 @@ for (let i = 0; i < drop_count; i++) {
 }
 
 
+let verif = false;
+const play = document.getElementById('play');
+const stop = document.querySelector('.fa-pause')
+
+// console.log(play);
+const audio = new Audio("/audio/Rich-in-the-80s-DivKid.mp3");
+play.addEventListener('click', (e) =>{
+    e.preventDefault();
+    
+    if(verif == false){
+        audio.play();
+        audio.loop = true;
+        verif = true;
+        play.classList.toggle("fa-play");
+        play.classList.toggle("fa-pause");
+        console.log(play);
+        
+    }else if(verif == true){
+        play.classList.toggle("fa-play");
+        play.classList.toggle("fa-pause");
+        audio.pause();
+        verif = false;
+    }
+
+})
 
 
 
