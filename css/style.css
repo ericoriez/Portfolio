@@ -47,7 +47,9 @@ html body {
 
 html body header {
   height: 100vh;
-  background: center/cover no-repeat url(/img/wmanxd03wp031.jpg);
+  background-image: url(/img/wmanxd03wp031.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 html body header nav {
@@ -154,7 +156,7 @@ html body main section {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 20vh;
-  background-image: url(/img/ggg.png);
+  background-image: url(/img/mur.png);
   background-repeat: repeat-x;
   background-size: 100% 100%;
   font-family: 'origin_tech_demoregular';
@@ -217,14 +219,20 @@ html body main #section-projets div .grid-projets {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3vw;
+  grid-gap: 2vw;
+  width: 40vw;
+  height: 60%;
 }
 
 html body main #section-projets div .grid-projets a {
   opacity: 0;
-  width: 10vw;
+  width: 100%;
   height: 20vh;
-  background-color: #22abcaca;
+}
+
+html body main #section-projets div .grid-projets a img {
+  width: 100%;
+  height: 100%;
 }
 
 html body footer {
@@ -246,10 +254,9 @@ html body footer #container-footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #1e2337;
   background-image: url(/img/samurai.jpg);
-  background-repeat: no-repeat;
   background-size: 100% 100%;
+  background-position: center;
 }
 
 html body footer #container-footer .rain {
