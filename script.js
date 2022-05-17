@@ -51,7 +51,6 @@ function execute(){
             figures[i].style.animation = `competence 1s ${0.1 + (0.5*i)}s both`;     
         }
     }
-    
     let projets = document.querySelectorAll('.grid-projets > a ');
     console.log(projets);
     if ( hauteur >= innerHeight * 3) {
@@ -60,15 +59,12 @@ function execute(){
 
             projets[t].style.animation = 'roll-in-right 0.7s  ease-out both';
         }
-        
     }
 }
 
-
+//  ******** Pluie ************ //
 let footer = document.querySelector('#container-footer');
-
 let drop_count = 800;
-
 for (let i = 0; i < drop_count; i++) {
     let span = document.createElement('span');
     span.classList.add('rain');
@@ -80,12 +76,10 @@ for (let i = 0; i < drop_count; i++) {
     span.style.animationDelay = Math.random()* - 20 + 's';
 }
 
-
+// ************ AUDIO ********* //
 let verif = false;
 const play = document.getElementById('play');
 const stop = document.querySelector('.fa-pause')
-
-// console.log(play);
 const audio = new Audio("/audio/Rich-in-the-80s-DivKid.mp3");
 play.addEventListener('click', (e) =>{
     e.preventDefault();

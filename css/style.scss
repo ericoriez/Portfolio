@@ -150,8 +150,8 @@ html{
        // ********************************************* MAIN **************************************** //
 
         main {
-          
           section {
+            // padding-left: 44vh; 
             height: 100vh;
                 display: flex;
                 justify-content: center;
@@ -279,12 +279,13 @@ html{
                       grid-gap: 2vw;
                       width: 40vw;
                       height: 60%;
-                     
                       a{
                         width: 100%;
                         height: 25vh;
                         border:3px solid white;
                         border-radius: 5px;
+                        position: relative;
+                        opacity: 0;
                         img{
                           width: 100%;
                           height: 100%;
@@ -297,9 +298,6 @@ html{
                           width: 100%;
                           bottom: 0px;
                           font-size: 1.2rem;
-                          // &:hover{
-                          //   // height: 100%;
-                          // }
                         }
                         
                       }
@@ -359,12 +357,10 @@ html{
               bottom: 30%;
               // background-color: rgb(136, 135, 135);
               width: 30%;
+              z-index: 1;
               a{
                 color: #E9E128;
                 margin: 0 10px;
-                i{
-
-                }
                 p{
                   font-size: 1.5rem;
                   color: white;
@@ -372,6 +368,36 @@ html{
               }
             }
           }
+          .modal-container{
+            display: none;
+            // display: flex; 
+            height: 100vh; /*couvre toute la page*/
+            width: 100%; /* couvre toute la page*/
+            position: fixed; /* se place au-dessus*/
+            top: 0;
+            left: 0;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            .modal-details{
+              display: flex;
+              img{
+                height: 90vh;
+                width: 100%;
+              }
+              .fa-times{
+                border:2px solid rgb(255, 255, 255);              
+                display: flex;
+                margin-left: 5px;
+                padding: 0 5px;
+                color: #E9E128;
+                background-color: #009ef384;
+                 text-align: center;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+        }
         }
   }
 }

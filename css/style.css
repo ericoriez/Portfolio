@@ -229,6 +229,8 @@ html body main #section-projets div .grid-projets a {
   height: 25vh;
   border: 3px solid white;
   border-radius: 5px;
+  position: relative;
+  opacity: 0;
 }
 
 html body main #section-projets div .grid-projets a img {
@@ -308,6 +310,7 @@ html body footer #container-footer .contact-reseau {
   font-size: 3rem;
   bottom: 30%;
   width: 30%;
+  z-index: 1;
 }
 
 html body footer #container-footer .contact-reseau a {
@@ -318,6 +321,54 @@ html body footer #container-footer .contact-reseau a {
 html body footer #container-footer .contact-reseau a p {
   font-size: 1.5rem;
   color: white;
+}
+
+html body footer .modal-container {
+  display: none;
+  height: 100vh;
+  /*couvre toute la page*/
+  width: 100%;
+  /* couvre toute la page*/
+  position: fixed;
+  /* se place au-dessus*/
+  top: 0;
+  left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+html body footer .modal-container .modal-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body footer .modal-container .modal-details img {
+  height: 90vh;
+  width: 100%;
+}
+
+html body footer .modal-container .modal-details .fa-times {
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5px;
+  padding: 0 5px;
+  color: #E9E128;
+  background-color: #009ef384;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @-webkit-keyframes slide {
