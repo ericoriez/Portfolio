@@ -75,8 +75,6 @@ html{
         border-left: 3px solid rgb(255, 255, 255);
         border-right: 3px solid rgb(255, 255, 255);    
         box-shadow: rgba(10, 95, 199, 0.989) 0px 50px 100px -20px, rgba(7, 100, 230, 0.995) 0px 30px 60px -30px, rgba(9, 107, 206, 0.984) 0px -2px 6px 0px inset;              
-
-
                 h1 {
                     position: relative;
                     top: 25vh;
@@ -95,7 +93,6 @@ html{
                     list-style-type: none;
                     margin-top: 2rem;
                     font-size: 1.7vw;
-                    
                     a {
                       font-family: 'origin_tech_demoregular';
                       text-decoration: none;
@@ -104,7 +101,6 @@ html{
                     a:hover{
                       color:#E9E128 ;
                       text-shadow: 1px 2px 2px rgb(14, 14, 14), 0 0 1em rgb(82, 244, 1), 0 0 0.2em rgb(208, 225, 14);
-                      
                     }
                   }
                   .fa-solid.fa-music{
@@ -113,7 +109,7 @@ html{
                   }
                   .fa-solid.fa-play{
                     font-size: 2vw;
-                    margin: 5px;
+                    margin-top: 2rem;
                     &:hover{
                       color:#E9E128 ;
                       text-shadow: 1px 2px 2px rgb(14, 14, 14), 0 0 1em rgb(82, 244, 1), 0 0 0.2em rgb(208, 225, 14);
@@ -155,7 +151,6 @@ html{
             height: 100vh;
                 display: flex;
                 justify-content: center;
-                // align-items: center;
                 padding-top: 20vh;
                 background-image: url('../img/mur.png');
                 background-repeat: repeat-x;
@@ -181,16 +176,12 @@ html{
                   text-align: center;
                   margin-bottom: 10vh;
                   font-size: 2vw;
-                  // font-family: 'hermesregular';
                   font-family: 'barcaderegular';
-                  
                 }
-                
                 p{
                   margin: 0 auto;
                   width: 40%;
                   font-size: 1.5vw;
-                  
                       }
                 }
             }
@@ -203,9 +194,7 @@ html{
                       text-align: center;
                         margin-bottom: 10vh;
                         font-size: 2vw;
-                        // font-family: 'hermesregular';
                         font-family: 'barcaderegular';
-
                       }
                     figure {
                       text-align: center;
@@ -290,7 +279,7 @@ html{
                           width: 100%;
                           height: 100%;
                         }
-                        h3{
+                        .h3-projets{
                           background-color: #009ef384;
                           color: white;
                           text-align: center;
@@ -358,12 +347,17 @@ html{
               // background-color: rgb(136, 135, 135);
               width: 30%;
               z-index: 1;
+
               a{
                 color: #E9E128;
                 margin: 0 10px;
+                &:hover{
+                  color: #fff;
+                }
                 p{
                   font-size: 1.5rem;
                   color: white;
+                  font-family: 'origin_tech_demoregular';
                 }
               }
             }
@@ -371,9 +365,9 @@ html{
           .modal-container{
             display: none;
             // display: flex; 
-            height: 100vh; /*couvre toute la page*/
-            width: 100%; /* couvre toute la page*/
-            position: fixed; /* se place au-dessus*/
+            height: 100vh;
+            width: 100%; 
+            position: fixed; 
             top: 0;
             left: 0;
             justify-content: center;
@@ -390,14 +384,19 @@ html{
                 display: flex;
                 margin-left: 5px;
                 padding: 0 5px;
-                color: #E9E128;
+                color: white;
                 background-color: #009ef384;
                  text-align: center;
                 align-items: center;
                 justify-content: center;
+                border-radius: 5px;
+                &:hover{
+                  background-color: #009ef3e6;
+                  color: rgba(208, 23, 23, 0.748);
+                }
               }
             }
-        }
+          }
         }
   }
 }

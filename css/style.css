@@ -109,7 +109,7 @@ html body header nav ul .fa-solid.fa-music {
 
 html body header nav ul .fa-solid.fa-play {
   font-size: 2vw;
-  margin: 5px;
+  margin-top: 2rem;
 }
 
 html body header nav ul .fa-solid.fa-play:hover {
@@ -238,7 +238,7 @@ html body main #section-projets div .grid-projets a img {
   height: 100%;
 }
 
-html body main #section-projets div .grid-projets a h3 {
+html body main #section-projets div .grid-projets a .h3-projets {
   background-color: #009ef384;
   color: white;
   text-align: center;
@@ -318,19 +318,21 @@ html body footer #container-footer .contact-reseau a {
   margin: 0 10px;
 }
 
+html body footer #container-footer .contact-reseau a:hover {
+  color: #fff;
+}
+
 html body footer #container-footer .contact-reseau a p {
   font-size: 1.5rem;
   color: white;
+  font-family: 'origin_tech_demoregular';
 }
 
 html body footer .modal-container {
   display: none;
   height: 100vh;
-  /*couvre toute la page*/
   width: 100%;
-  /* couvre toute la page*/
   position: fixed;
-  /* se place au-dessus*/
   top: 0;
   left: 0;
   -webkit-box-pack: center;
@@ -360,7 +362,7 @@ html body footer .modal-container .modal-details .fa-times {
   display: flex;
   margin-left: 5px;
   padding: 0 5px;
-  color: #E9E128;
+  color: white;
   background-color: #009ef384;
   text-align: center;
   -webkit-box-align: center;
@@ -369,6 +371,12 @@ html body footer .modal-container .modal-details .fa-times {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 5px;
+}
+
+html body footer .modal-container .modal-details .fa-times:hover {
+  background-color: #009ef3e6;
+  color: rgba(208, 23, 23, 0.748);
 }
 
 @-webkit-keyframes slide {
