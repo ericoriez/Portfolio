@@ -22,7 +22,7 @@ let lettre = 0;
 let lancer = true;
 
 
-
+// ****** animation au scroll ****** //
 window.addEventListener('scroll', execute) 
 function execute(){
     let hauteur = document.documentElement.scrollTop;
@@ -71,7 +71,7 @@ for (let i = 0; i < drop_count; i++) {
     footer.appendChild(span);
     span.style.left = Math.random()*footer.getBoundingClientRect().width - 5 + 'px';
     span.style.top = Math.random()* - 0 + 'px';
-    span.style.width = Math.random()*2.5 + 'px';
+    span.style.width = Math.random()*1.5 + 'px';
     span.style.animationDuration = Math.random()* 20 + 's';
     span.style.animationDelay = Math.random()* - 20 + 's';
 }

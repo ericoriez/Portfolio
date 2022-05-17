@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'hermesregular';
-  src: url("/font/hermes/hermes-regular-webfont.woff") format("woff2"), url("/font/hermes/hermes-regular-webfont.woff2") format("woff");
+  src: url("../font/hermes/hermes-regular-webfont.woff") format("woff2"), url("../font/hermes/hermes-regular-webfont.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'origin_tech_demoregular';
-  src: url("/font/tech/origintech_personal_use-webfont.woff") format("woff2"), url("/font/tech/origintech_personal_use-webfont.woff2") format("woff");
+  src: url("../font/tech/origintech_personal_use-webfont.woff") format("woff2"), url("../font/tech/origintech_personal_use-webfont.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'barcaderegular';
-  src: url("/font/neon/barcade-webfont.woff") format("woff2"), url("/font/neon/barcade-webfont.woff2") format("woff");
+  src: url("../font/neon/barcade-webfont.woff") format("woff2"), url("../font/neon/barcade-webfont.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -266,7 +266,7 @@ html body footer #container-footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(/img/samurai.jpg);
+  background-image: url("../img/samurai.jpg");
   background-size: 100% 100%;
   background-position: center;
 }
