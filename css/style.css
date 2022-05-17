@@ -47,7 +47,7 @@ html body {
 
 html body header {
   height: 100vh;
-  background-image: url(/img/wmanxd03wp031.jpg);
+  background-image: url("../img/wmanxd03wp031.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -156,7 +156,7 @@ html body main section {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 20vh;
-  background-image: url(/img/mur.png);
+  background-image: url("../img/mur.png");
   background-repeat: repeat-x;
   background-size: 100% 100%;
   font-family: 'origin_tech_demoregular';
