@@ -51,7 +51,7 @@ html{
     font-size: 1.4rem;
     font-family: Arial;
     color: white;
-
+    
     header {
       
       height: 100vh;
@@ -59,11 +59,21 @@ html{
       // background-repeat: no-repeat;
       // background-size : 100% 100%;
       // background: center/cover no-repeat url(/img/wmanxd03wp031.jpg);
+      .oeil {
+        position: fixed;
+        top: 40%;
+        right: 10%;
+        .fond-pupille{
+          position: absolute;
+          top: 25%;
+          right: 25%;
+        }
+        // z-index: 3;
+      }
       
       background-image: url('../img/wmanxd03wp031.jpg');
       background-position: center;
       background-size: cover;
-      
       nav {
         z-index: 1;
         height: 100%;
@@ -75,61 +85,61 @@ html{
         border-left: 3px solid rgb(255, 255, 255);
         border-right: 3px solid rgb(255, 255, 255);    
         box-shadow: rgba(10, 95, 199, 0.989) 0px 50px 100px -20px, rgba(7, 100, 230, 0.995) 0px 30px 60px -30px, rgba(9, 107, 206, 0.984) 0px -2px 6px 0px inset;              
-                h1 {
-                    position: relative;
-                    top: 25vh;
-                    font-family: 'hermesregular';
-                    font-size: 2.5vw;
-                    color:#E9E128 ;
-                    text-shadow: 1px 2px 2px rgb(14, 14, 14), 0 0 1em rgb(82, 244, 1), 0 0 0.2em rgb(208, 225, 14);
-                }
-                ul {
-                  width: 100%;
-                  height: 100%;
-                  position: relative;
-                  top: 30vh;
-                  text-align: center;
-                  li {
-                    list-style-type: none;
-                    margin-top: 2rem;
-                    font-size: 1.7vw;
-                    a {
-                      font-family: 'origin_tech_demoregular';
-                      text-decoration: none;
-                      color: white;
-                    }
-                    a:hover{
-                      color:#E9E128 ;
-                      text-shadow: 1px 2px 2px rgb(14, 14, 14), 0 0 1em rgb(82, 244, 1), 0 0 0.2em rgb(208, 225, 14);
-                    }
-                  }
-                  .fa-solid.fa-music{
-                    font-size: 2vw;
-                    margin: 10px;
-                  }
-                  .fa-solid.fa-play{
-                    font-size: 2vw;
-                    margin-top: 2rem;
-                    &:hover{
-                      color:#E9E128 ;
-                      text-shadow: 1px 2px 2px rgb(14, 14, 14), 0 0 1em rgb(82, 244, 1), 0 0 0.2em rgb(208, 225, 14);
-                    }
-                  }
-                  .fa-solid.fa-pause{
-                    font-size: 2.3vw;
-                    margin: 5px;
-                    &:hover{
-                      color:#E9E128 ;
-                      text-shadow: 1px 2px 2px rgb(14, 14, 14), 0 0 1em rgb(82, 244, 1), 0 0 0.2em rgb(208, 225, 14);
-                    }
-                  }
-                }
+        h1 {
+          position: relative;
+          top: 25vh;
+          font-family: 'hermesregular';
+          font-size: 2.5vw;
+          color:#E9E128 ;
+          text-shadow: 1px 2px 2px rgb(14, 14, 14), 0 0 1em rgb(82, 244, 1), 0 0 0.2em rgb(208, 225, 14);
+        }
+        ul {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          top: 30vh;
+          text-align: center;
+          li {
+            list-style-type: none;
+            margin-top: 2rem;
+            font-size: 1.7vw;
+            a {
+              font-family: 'origin_tech_demoregular';
+              text-decoration: none;
+              color: white;
             }
-
-            .name{
-                text-align: center;
-                position: absolute;
-                top: 30%;
+            a:hover{
+              color:#E9E128 ;
+              text-shadow: 1px 2px 2px rgb(14, 14, 14), 0 0 1em rgb(82, 244, 1), 0 0 0.2em rgb(208, 225, 14);
+            }
+          }
+          .fa-solid.fa-music{
+            font-size: 2vw;
+            margin: 10px;
+          }
+          .fa-solid.fa-play{
+            font-size: 2vw;
+            margin-top: 2rem;
+            &:hover{
+              color:#E9E128 ;
+              text-shadow: 1px 2px 2px rgb(14, 14, 14), 0 0 1em rgb(82, 244, 1), 0 0 0.2em rgb(208, 225, 14);
+            }
+          }
+          .fa-solid.fa-pause{
+            font-size: 2.3vw;
+            margin: 5px;
+            &:hover{
+              color:#E9E128 ;
+              text-shadow: 1px 2px 2px rgb(14, 14, 14), 0 0 1em rgb(82, 244, 1), 0 0 0.2em rgb(208, 225, 14);
+            }
+          }
+        }
+      }
+      
+      .name{
+        text-align: center;
+        position: absolute;
+        top: 30%;
                 left: 45%;
                 transform: translate(-50%, -50%);
                 font-family: 'barcaderegular';
@@ -156,15 +166,6 @@ html{
                 background-repeat: repeat-x;
                 background-size : 100% 100%;
                 font-family: 'origin_tech_demoregular';
-                // animation: slidein 10s;
-                // animation: 20s ease-in 1s infinite slidein;
-                
-                // @keyframes slidein {
-                //       from{
-                //         width: 100%;
-                //         background-position: 2000px;
-                //     }
-                // }
               }
 
             #section-profil {
@@ -201,7 +202,7 @@ html{
                       &>img{
                         width: 5vw;
                         opacity: 0;
-                        margin: 2rem;
+                        margin: 3rem;
                       }
                     }
                   }
@@ -271,7 +272,7 @@ html{
                       a{
                         width: 100%;
                         height: 25vh;
-                        border:3px solid white;
+                        border:5px solid white;
                         border-radius: 5px;
                         position: relative;
                         opacity: 0;
@@ -286,7 +287,7 @@ html{
                           position: absolute;
                           width: 100%;
                           bottom: 0px;
-                          font-size: 1.2rem;
+                          font-size: 3vh;
                         }
                         
                       }
@@ -315,7 +316,7 @@ html{
             // background-size: cover;
             .rain {
               width: 2px;
-              height: 30px;
+              height: 40px;
               background: linear-gradient(transparent, rgba(175, 175, 175, 0.311));
                 position: absolute;
                 left:0px;
@@ -342,7 +343,7 @@ html{
               position: absolute;
               text-align: center;
               border-radius: 5px;
-              font-size: 3rem;
+              font-size: 8vh;
               bottom: 30%;
               // background-color: rgb(136, 135, 135);
               width: 30%;
@@ -355,7 +356,7 @@ html{
                   color: #fff;
                 }
                 p{
-                  font-size: 1.5rem;
+                  font-size: 3vh;
                   color: white;
                   font-family: 'origin_tech_demoregular';
                 }
@@ -380,19 +381,21 @@ html{
                 width: 100%;
               }
               .fa-times{
-                border:2px solid rgb(255, 255, 255);              
+                border:3px solid rgb(255, 255, 255);              
                 display: flex;
                 margin-left: 5px;
-                padding: 0 5px;
+                padding: 0 20px;
+                font-size: 3vh;
                 color: white;
                 background-color: #009ef384;
-                 text-align: center;
+                text-align: center;
                 align-items: center;
                 justify-content: center;
                 border-radius: 5px;
                 &:hover{
                   background-color: #009ef3e6;
                   color: rgba(208, 23, 23, 0.748);
+                  font-size: 3vh;
                 }
               }
             }

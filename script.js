@@ -52,6 +52,23 @@ function execute(){
     }
 }
 
+let pupille = document.querySelector('.fond-pupille');
+
+document.onmousemove = function () {
+    let x = event.clientX * 60 / window.innerWidth + "%";
+    let y = event.clientY * 100 / window.innerHeight + "%";
+
+    pupille.style.left = x;
+    pupille.style.top = y;
+    pupille.style.transform = "translate(-" + x +",-" + y +")";
+    console.log("x =" + x);
+    console.log("y =" + y);
+
+}
+
+
+
+
 //  ******** Pluie ************ //
 let footer = document.querySelector('#container-footer');
 let drop_count = 800;
