@@ -53,8 +53,8 @@ function execute(){
 }
 
 let pupille = document.querySelector('.fond-pupille');
-
-document.onmousemove = function () {
+let oeil = document.querySelector('.oeil')
+document.onmousemove = function (event) {
     let x = event.clientX * 60 / window.innerWidth + "%";
     let y = event.clientY * 100 / window.innerHeight + "%";
 

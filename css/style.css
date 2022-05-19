@@ -54,8 +54,37 @@ html body header {
 
 html body header .oeil {
   position: fixed;
-  top: 40%;
+  top: 15%;
   right: 10%;
+}
+
+html body header .oeil .fond-oeil {
+  position: relative;
+  opacity: 0.9;
+  -webkit-animation: rotating 10s linear infinite;
+          animation: rotating 10s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 html body header .oeil .fond-pupille {
@@ -116,7 +145,7 @@ html body header nav ul li a:hover {
 
 html body header nav ul .fa-solid.fa-music {
   font-size: 2vw;
-  margin: 10px;
+  margin: 2rem;
 }
 
 html body header nav ul .fa-solid.fa-play {
@@ -258,6 +287,32 @@ html body main #section-projets div .grid-projets a .h3-projets {
   width: 100%;
   bottom: 0px;
   font-size: 3vh;
+}
+
+html body main #section-projets div .grid-projets a:hover .h3-projets {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: glissement;
+          animation-name: glissement;
+  height: 100%;
+}
+
+@-webkit-keyframes glissement {
+  0% {
+    height: 2vh;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes glissement {
+  0% {
+    height: 2vh;
+  }
+  100% {
+    height: 100%;
+  }
 }
 
 html body footer {
