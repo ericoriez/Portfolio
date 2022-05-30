@@ -13,7 +13,7 @@ if (titre.length > 0) {
 }
 
 // animation lettre par lettre du texte profil
-let text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat ante sed fringilla bibendum. In quam elit, rutrum quis adipiscing id, iaculis eu ipsum. Morbi faucibus lectus at ante feugiat dignissim. In turpis turpis, placerat in fringilla eget, sodales blandit lacus. Vivamus tempor blandit mauris nec semper. Sed cursus metus sed justo cursus bibendum. Maecenas ornare sem sed lacinia auctor. Nulla sapien dolor, faucibus vitae dapibus in, commodo id est. Sed a ipsum laoreet, convallis lacus eu.';
+let text = "Bienvenue sur mon portfolio !!! En reconversion professionnelle et passionner par l'univers multimédia et les nouvelles technologies, c'est tout naturellement que je me suis dirigé vers une formation de développeur web afin de pouvoir vivre de ma passions. Actuellement en formation 'Développeur Web / Web mobile' au centre Onlineformapro d'Annecy du 11/21 au 10/22, Je suis à la recherche de mon premier emploi dans ce domaine. Enthousiaste et motivé par ce nouveau projet de vie, je vous présente mon portfolio avec mon savoir-faire acquis en formation et les projets sur lesquels j'ai travaillé.";
 let lettre = 0;
 let lancer = true;
 let figures = document.querySelectorAll('figure > img');
@@ -51,20 +51,20 @@ function execute(){
         }
     }
 }
+// animation oeil
+// let pupille = document.querySelector('.fond-pupille');
+// let oeil = document.querySelector('.oeil')
+// document.onmousemove = function (event) {
+//     let x = event.clientX * 60 / window.innerWidth + "%";
+//     let y = event.clientY * 100 / window.innerHeight + "%";
 
-let pupille = document.querySelector('.fond-pupille');
-let oeil = document.querySelector('.oeil')
-document.onmousemove = function (event) {
-    let x = event.clientX * 60 / window.innerWidth + "%";
-    let y = event.clientY * 100 / window.innerHeight + "%";
+//     pupille.style.left = x;
+//     pupille.style.top = y;
+//     pupille.style.transform = "translate(-" + x +",-" + y +")";
+//     console.log("x =" + x);
+//     console.log("y =" + y);
 
-    pupille.style.left = x;
-    pupille.style.top = y;
-    pupille.style.transform = "translate(-" + x +",-" + y +")";
-    console.log("x =" + x);
-    console.log("y =" + y);
-
-}
+// }
 
 
 
@@ -102,7 +102,7 @@ btnCV.addEventListener('click', () => {
 let verif = false;
 const play = document.getElementById('play');
 const stop = document.querySelector('.fa-pause')
-const audio = new Audio("../audio/Rich-in-the-80s-DivKid.mp3");
+const audio = new Audio("./audio/Rich-in-the-80s-DivKid.mp3");
 play.addEventListener('click', (e) =>{
     e.preventDefault();
     
