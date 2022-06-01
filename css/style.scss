@@ -721,6 +721,142 @@ html{
   }
 }
 
+// max-width 560px
+@media screen and (max-width: 560px) {
+  // section accueil
+  html body header nav{
+    z-index: 1;
+    height: 10vh;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);    
+    box-shadow: rgba(10, 95, 199, 0.989) 0px 50px 100px -20px, rgba(7, 100, 230, 0.995) 0px 30px 60px -30px, rgba(9, 107, 206, 0.984) 0px -2px 6px 0px inset;
+    h1 {
+     top: 1vh;
+     left: 22vw;
+     font-size: 9vw;
+   }
+   ul {
+    //  display: flex;
+     top: 1vh;
+    //  text-align: center;
+     li {
+      //  margin-top: 0;
+      //  font-size: 3.5vw;
+       
+       a {
+        //  margin: 1px;
+       }
+     
+     }
+    //  .fa-solid.fa-music{
+    //    font-size: 3vw;
+    //    margin: 2vw;
+    //    margin-top: 0;
+    //  }
+    //  .fa-solid.fa-play{
+    //    font-size: 3vw;
+    //    margin-top: 0;
+     
+    //  }
+    //  .fa-solid.fa-pause{
+    //    font-size: 3vw;
+    //    margin: 0;
+    //    margin-top: 0;
+   
+    //  }
+   }
+  }
+
+ html body header .name {
+   top: 30%;
+   left: 28%;
+     h1 {
+      font-size: 5vw;
+     }
+     h2 {
+      font-size: 4vw;
+     }
+ }
+
+ // section profil
+ html body main #section-profil div h1 {
+   font-size: 7vw;
+   margin-bottom: 5vh;
+ }
+
+ html body main #section-profil div p{
+   font-size: 4vw;
+   width: 90%;
+ }
+
+ // section competences
+ html body main #section-competences div {
+   width: 90%;
+ }
+ html body main #section-competences div h1 {
+   font-size: 7vw;
+ }
+ html body main #section-competences div figure img {
+     width: 18vw;
+    //  opacity: 0;
+     margin: 5vw;
+ }
+
+ // section projets
+ html body main #section-projets div h1 {
+   font-size: 7vw;
+ }
+ html body main #section-projets div .grid-projets {
+   width: 80vw;
+   height: 30vh;
+   a{
+     height: 15vh;
+     .h3-projets{
+       font-size: 4vw; 
+     }
+   }
+ }
+
+ // section footer
+ html body footer #container-footer {
+   background-size: cover;
+ }
+ html body footer #container-footer h1 {
+   font-size: 7vw;
+ }
+ html body footer #container-footer .contact-reseau {
+   flex-direction: column;
+   font-size: 8vh;
+   bottom: 5%;
+   width: 70%;
+ }
+ html body footer #container-footer .contact-reseau a {
+   font-size: 14vw;
+ }
+ html body footer .modal-container .modal-details {
+   width: 100%;
+ }
+ html body footer .modal-container .modal-details img {
+   height: 70vh;
+   width: 87vw;
+ }
+ html body footer .modal-container .modal-details .fa-times {
+   border:1px solid rgb(255, 255, 255);              
+   display: flex;
+   margin-left: 2px;
+   padding: 0 6px;
+   font-size: 4vh;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+ }
+}
+
 // max-width 425px
 @media screen and (max-width: 425px) {
 
@@ -880,7 +1016,7 @@ html{
     }
     ul {
       display: flex;
-      top: 1vh;
+      top: 2vh;
       text-align: center;
       li {
         margin-top: 0;
@@ -1125,7 +1261,7 @@ html{
       width: 70%;
     }
     html body footer #container-footer .contact-reseau a {
-      font-size: 15vw;
+      font-size: 18vw;
     }
     html body footer .modal-container .modal-details {
       width: 100%;

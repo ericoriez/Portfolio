@@ -13,7 +13,7 @@ if (titre.length > 0) {
 }
 
 // animation lettre par lettre du texte profil
-let text = "Bienvenue sur mon portfolio !!! En reconversion professionnelle et passionner par l'univers multimédia et les nouvelles technologies, c'est tout naturellement que je me suis dirigé vers une formation de développeur web afin de pouvoir vivre de ma passions. Actuellement en formation 'Développeur Web / Web mobile' au centre Onlineformapro d'Annecy du 11/21 au 10/22, Je suis à la recherche de mon premier emploi dans ce domaine. Enthousiaste et motivé par ce nouveau projet de vie, je vous présente mon portfolio avec mon savoir-faire acquis en formation et les projets sur lesquels j'ai travaillé.";
+let text = "Bienvenue sur mon portfolio !!! En reconversion professionnelle et passionner par l'univers multimédia et les nouvelles technologies, c'est tout naturellement que je me suis dirigé vers une formation de développeur web afin de pouvoir vivre de ma passions. Actuellement en formation 'Développeur Web / Web mobile' au centre Onlineformapro d'Annecy du 11/21 au 10/22, Je suis à la recherche de mon premier emploi dans ce domaine. Enthousiaste et motivé par ce nouveau projet professionnel, je vous présente mon portfolio avec mon savoir-faire acquis en formation et les projets sur lesquels j'ai travaillé.";
 let lettre = 0;
 let lancer = true;
 let figures = document.querySelectorAll('figure > img');
@@ -22,8 +22,7 @@ let figures = document.querySelectorAll('figure > img');
 // ****** animation au scroll ****** //
 window.addEventListener('scroll', execute) 
 function execute(e){
-    console.log(window.pageYOffset);
-
+    // console.log(window.pageYOffset);
     let hauteur = document.documentElement.scrollTop;
     let innerHeight = window.innerHeight
     // scroll section profil
@@ -53,23 +52,6 @@ function execute(e){
         }
     }
 }
-// animation oeil
-// let pupille = document.querySelector('.fond-pupille');
-// let oeil = document.querySelector('.oeil')
-// document.onmousemove = function (event) {
-//     let x = event.clientX * 60 / window.innerWidth + "%";
-//     let y = event.clientY * 100 / window.innerHeight + "%";
-
-//     pupille.style.left = x;
-//     pupille.style.top = y;
-//     pupille.style.transform = "translate(-" + x +",-" + y +")";
-//     console.log("x =" + x);
-//     console.log("y =" + y);
-
-// }
-
-
-
 
 //  ******** Pluie ************ //
 let footer = document.querySelector('#container-footer');
