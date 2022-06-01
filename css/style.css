@@ -27,14 +27,6 @@
   text-decoration: none;
 }
 
-.reveal {
-  opacity: 0;
-}
-
-.reveal-visible {
-  opacity: 1;
-}
-
 html {
   font-size: 62.5%;
 }
@@ -887,7 +879,7 @@ html body footer .modal-container .modal-details .fa-times:hover {
 
 @media screen and (max-width: 1024px) {
   html body main #section-projets div .grid-projets {
-    width: 30vw;
+    width: 50vw;
     height: 30vh;
   }
   html body main #section-projets div .grid-projets a {
@@ -913,15 +905,15 @@ html body footer .modal-container .modal-details .fa-times:hover {
             box-shadow: rgba(10, 95, 199, 0.989) 0px 50px 100px -20px, rgba(7, 100, 230, 0.995) 0px 30px 60px -30px, rgba(9, 107, 206, 0.984) 0px -2px 6px 0px inset;
   }
   html body header nav h1 {
-    top: 1vh;
-    left: 35vw;
-    font-size: 5vw;
+    top: 0;
+    left: 30vw;
+    font-size: 7vw;
   }
   html body header nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 2.5vh;
+    top: 0;
     text-align: center;
   }
   html body header nav ul li {
@@ -929,7 +921,7 @@ html body footer .modal-container .modal-details .fa-times:hover {
     font-size: 3.4vw;
   }
   html body header nav ul li a {
-    margin: 5px;
+    margin: 4px;
   }
   html body header nav ul .fa-solid.fa-music {
     font-size: 3vw;
@@ -947,7 +939,7 @@ html body footer .modal-container .modal-details .fa-times:hover {
   }
   html body header .name {
     top: 30%;
-    left: 34%;
+    left: 36%;
   }
   html body header .name h1 {
     font-size: 5vw;
@@ -957,34 +949,38 @@ html body footer .modal-container .modal-details .fa-times:hover {
   }
   html body main #section-profil div h1 {
     font-size: 5vw;
+    margin-bottom: 5vh;
   }
   html body main #section-profil div p {
-    font-size: 4vw;
-    width: 80%;
+    font-size: 3.5vw;
+    width: 90%;
   }
   html body main #section-competences div {
-    width: 70%;
+    width: 60%;
   }
   html body main #section-competences div h1 {
     font-size: 5vw;
+    margin-bottom: 5vh;
   }
   html body main #section-competences div figure img {
-    width: 14vw;
+    width: 12vw;
     opacity: 0;
     margin: 2vw;
   }
   html body main #section-projets div h1 {
     font-size: 5vw;
+    margin-bottom: 5vh;
   }
   html body main #section-projets div .grid-projets {
     width: 80vw;
     height: 30vh;
+    grid-gap: 3vw;
   }
   html body main #section-projets div .grid-projets a {
     height: 15vh;
   }
   html body main #section-projets div .grid-projets a .h3-projets {
-    font-size: 4vw;
+    font-size: 3vw;
   }
   html body footer #container-footer {
     background-size: cover;
@@ -1002,7 +998,7 @@ html body footer .modal-container .modal-details .fa-times:hover {
     width: 70%;
   }
   html body footer #container-footer .contact-reseau a {
-    font-size: 10vw;
+    font-size: 9vw;
   }
   html body footer .modal-container .modal-details {
     width: 100%;
@@ -1045,14 +1041,14 @@ html body footer .modal-container .modal-details .fa-times:hover {
   }
   html body header nav h1 {
     top: 2vh;
-    left: 25vw;
+    left: 22vw;
     font-size: 10vw;
   }
   html body header nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 3vh;
+    top: 2vh;
     text-align: center;
   }
   html body header nav ul li {
@@ -1078,7 +1074,7 @@ html body footer .modal-container .modal-details .fa-times:hover {
   }
   html body header .name {
     top: 30%;
-    left: 20%;
+    left: 22%;
   }
   html body header .name h1 {
     font-size: 7vw;
@@ -1088,13 +1084,14 @@ html body footer .modal-container .modal-details .fa-times:hover {
   }
   html body main #section-profil div h1 {
     font-size: 7vw;
+    margin-bottom: 5vh;
   }
   html body main #section-profil div p {
     font-size: 5vw;
-    width: 70%;
+    width: 90%;
   }
   html body main #section-competences div {
-    width: 70%;
+    width: 90%;
   }
   html body main #section-competences div h1 {
     font-size: 7vw;
@@ -1176,14 +1173,14 @@ html body footer .modal-container .modal-details .fa-times:hover {
   }
   html body header nav h1 {
     top: 2vh;
-    left: 25vw;
+    left: 22vw;
     font-size: 10vw;
   }
   html body header nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 3vh;
+    top: 1vh;
     text-align: center;
   }
   html body header nav ul li {
@@ -1209,7 +1206,7 @@ html body footer .modal-container .modal-details .fa-times:hover {
   }
   html body header .name {
     top: 30%;
-    left: 20%;
+    left: 24%;
   }
   html body header .name h1 {
     font-size: 7vw;
@@ -1219,16 +1216,18 @@ html body footer .modal-container .modal-details .fa-times:hover {
   }
   html body main #section-profil div h1 {
     font-size: 7vw;
+    margin-bottom: 5vh;
   }
   html body main #section-profil div p {
     font-size: 5vw;
-    width: 70%;
+    width: 90%;
   }
   html body main #section-competences div {
-    width: 70%;
+    width: 80%;
   }
   html body main #section-competences div h1 {
     font-size: 7vw;
+    margin-bottom: 5vh;
   }
   html body main #section-competences div figure img {
     width: 20vw;
@@ -1237,10 +1236,14 @@ html body footer .modal-container .modal-details .fa-times:hover {
   }
   html body main #section-projets div h1 {
     font-size: 7vw;
+    margin-bottom: 5vh;
   }
   html body main #section-projets div .grid-projets {
-    width: 80vw;
-    height: 30vh;
+    width: 70vw;
+    height: 20vh;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
   }
   html body main #section-projets div .grid-projets a {
     height: 15vh;
@@ -1260,11 +1263,11 @@ html body footer .modal-container .modal-details .fa-times:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     font-size: 8vh;
-    bottom: 10%;
+    bottom: 2%;
     width: 70%;
   }
   html body footer #container-footer .contact-reseau a {
-    font-size: 20vw;
+    font-size: 17vw;
   }
   html body footer .modal-container .modal-details {
     width: 100%;
@@ -1307,14 +1310,14 @@ html body footer .modal-container .modal-details .fa-times:hover {
   }
   html body header nav h1 {
     top: 2vh;
-    left: 25vw;
+    left: 22vw;
     font-size: 10vw;
   }
   html body header nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 3vh;
+    top: 2vh;
     text-align: center;
   }
   html body header nav ul li {
@@ -1350,26 +1353,32 @@ html body footer .modal-container .modal-details .fa-times:hover {
   }
   html body main #section-profil div h1 {
     font-size: 7vw;
+    margin-bottom: 40px;
   }
   html body main #section-profil div p {
     font-size: 5vw;
-    width: 70%;
+    width: 90%;
   }
   html body main #section-competences div {
-    width: 70%;
+    width: 90%;
   }
   html body main #section-competences div h1 {
     font-size: 7vw;
+    margin-bottom: 40px;
   }
   html body main #section-competences div figure img {
-    width: 20vw;
+    width: 26vw;
     opacity: 0;
     margin: 2vw;
   }
   html body main #section-projets div h1 {
     font-size: 7vw;
+    margin-bottom: 40px;
   }
   html body main #section-projets div .grid-projets {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
     width: 80vw;
     height: 30vh;
   }
@@ -1377,7 +1386,7 @@ html body footer .modal-container .modal-details .fa-times:hover {
     height: 15vh;
   }
   html body main #section-projets div .grid-projets a .h3-projets {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   html body footer #container-footer {
     background-size: cover;
@@ -1395,7 +1404,7 @@ html body footer .modal-container .modal-details .fa-times:hover {
     width: 70%;
   }
   html body footer #container-footer .contact-reseau a {
-    font-size: 20vw;
+    font-size: 15vw;
   }
   html body footer .modal-container .modal-details {
     width: 100%;

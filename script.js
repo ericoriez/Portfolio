@@ -21,7 +21,9 @@ let figures = document.querySelectorAll('figure > img');
 
 // ****** animation au scroll ****** //
 window.addEventListener('scroll', execute) 
-function execute(){
+function execute(e){
+    console.log(window.pageYOffset);
+
     let hauteur = document.documentElement.scrollTop;
     let innerHeight = window.innerHeight
     // scroll section profil
