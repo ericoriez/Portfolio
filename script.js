@@ -13,7 +13,7 @@ if (titre.length > 0) {
 }
 
 // animation lettre par lettre du texte profil
-let text = "Bienvenue sur mon portfolio !!! En reconversion professionnelle et passionner par l'univers multimédia et les nouvelles technologies, c'est tout naturellement que je me suis dirigé vers une formation de développeur web afin de pouvoir vivre de ma passions. Actuellement en formation 'Développeur Web / Web mobile' au centre Onlineformapro d'Annecy du 11/21 au 10/22, Je suis à la recherche de mon premier emploi dans ce domaine. Enthousiaste et motivé par ce nouveau projet professionnel, je vous présente mon portfolio avec mon savoir-faire acquis en formation et les projets sur lesquels j'ai travaillé.";
+let text = "Bienvenu sur mon portfolio ! Comme beaucoup de personne, j'ai profité de la situation du covid pour suivre une formation et me réorienté vers l'une de mes passions, le web développement. Aujourd'hui formé en full stack, je travaille principalement avec Javascript et PhP, mais reste toujours ouvert à de nouvelles technologies. Enthousiaste et toujours à l'écoute, je m'adapte aux différents projets et à leurs challenges. Vous avez un projet en tête? Retrouvez mes contacts en bas de page!";
 let lettre = 0;
 let lancer = true;
 let figures = document.querySelectorAll('figure > img');
@@ -25,6 +25,7 @@ function execute(e){
     // console.log(window.pageYOffset);
     let hauteur = document.documentElement.scrollTop;
     let innerHeight = window.innerHeight
+
     // scroll section profil
     if(hauteur >= innerHeight && lancer) {
         let Write = function write(){
@@ -108,6 +109,25 @@ play.addEventListener('click', (e) =>{
 })
 
 
+// l'icône burger
+const burger = document.querySelector('.navbar-mobile i');
 
+// la modal burger
+const modals = document.querySelector('.modal');
 
+burger.addEventListener('click', function() {
+    console.log("icone cliquée");
+    modals.classList.toggle('change-modal');
+    burger.classList.toggle('fa-times');
+});
 
+// disparition de la modal au click d'un element de la navbar
+const itemsNavbar = document.querySelectorAll('.navbar-mobile .navbar-mobile-list a');
+
+for (const a of itemsNavbar){
+    a.addEventListener('click', function(){
+        console.log('a cliquer');
+        modals.classList.toggle('change-modal');
+        burger.classList.toggle('fa-times');
+    })
+}

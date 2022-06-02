@@ -19,6 +19,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'raider_crusader_halftoneRg';
+  src: url("../font/raiderhalf/raidercrusaderhalf-webfont.woff") format("woff2"), url("../font/raiderhalf/raidercrusaderhalf-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -147,7 +154,7 @@ html body main section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 20vh;
+  padding-top: 10vh;
   background-image: url("../img/mur.png");
   background-repeat: repeat-x;
   background-size: 100% 100%;
@@ -165,15 +172,17 @@ html body main #section-profil div {
 html body main #section-profil div h1 {
   color: white;
   text-align: center;
-  margin-bottom: 10vh;
+  margin-bottom: 8vh;
   font-size: 2vw;
   font-family: 'barcaderegular';
 }
 
 html body main #section-profil div p {
+  font-family: 'raider_crusader_halftoneRg';
+  color: #fff;
   margin: 0 auto;
   width: 40%;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
 }
 
 html body main #section-competences div {
@@ -264,9 +273,6 @@ html body footer #container-footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-image: url("../img/samurai.jpg");
   background-size: 100% 100%;
   background-position: center;
@@ -292,6 +298,8 @@ html body footer #container-footer .rain {
 html body footer #container-footer h1 {
   color: white;
   text-align: center;
+  position: relative;
+  top: 30vh;
   margin-bottom: 10vh;
   font-size: 2vw;
   font-family: 'barcaderegular';
@@ -998,7 +1006,7 @@ html body footer .modal-container .modal-details .fa-times:hover {
     width: 70%;
   }
   html body footer #container-footer .contact-reseau a {
-    font-size: 9vw;
+    font-size: 11vw;
   }
   html body footer .modal-container .modal-details {
     width: 100%;
@@ -1104,7 +1112,7 @@ html body footer .modal-container .modal-details .fa-times:hover {
     width: 70%;
   }
   html body footer #container-footer .contact-reseau a {
-    font-size: 14vw;
+    font-size: 15vw;
   }
   html body footer .modal-container .modal-details {
     width: 100%;
@@ -1131,7 +1139,7 @@ html body footer .modal-container .modal-details .fa-times:hover {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 414px) {
   html body header nav {
     z-index: 1;
     height: 10vh;
@@ -1263,7 +1271,7 @@ html body footer .modal-container .modal-details .fa-times:hover {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   html body header nav {
     z-index: 1;
     height: 10vh;
@@ -1534,6 +1542,90 @@ html body footer .modal-container .modal-details .fa-times:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+/* STYLE MENU MOBILE */
+.navbar-mobile {
+  display: none;
+}
+
+.fa-bars {
+  position: fixed;
+  z-index: 9999;
+  top: 3vh;
+  left: 3vw;
+  font-size: 3rem;
+  color: white;
+}
+
+.modal {
+  -webkit-transition: top 0.9s;
+  transition: top 0.9s;
+  background-color: #009ef3;
+  height: 100vh;
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.navbar-mobile .navbar-mobile-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-mobile .navbar-mobile-list ul li {
+  margin: 5vh;
+}
+
+.navbar-mobile .navbar-mobile-list a {
+  font-size: 5rem;
+  font-weight: 800;
+  color: white;
+  padding: 1rem;
+}
+
+.change-modal {
+  top: 0;
+}
+
+/*Media queries*/
+@media screen and (max-width: 768px) {
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-mobile {
+    display: block;
+  }
+  .navbar-mobile .fa-music {
+    position: fixed;
+    z-index: 9999;
+    top: 4vh;
+    right: 8vw;
+    font-size: 3rem;
+    color: white;
+  }
+  .navbar-mobile .fa-play {
+    position: fixed;
+    z-index: 9999;
+    top: 4vh;
+    right: 5vw;
+    font-size: 3rem;
+    color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */

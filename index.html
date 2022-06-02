@@ -9,9 +9,9 @@
     <title>Portfolio</title>
 </head>
 <body>
+    
     <header>
-        
-        <nav>
+        <nav class="navbar-desktop">
             <h1>CyberFolio</h1>
             <ul>
                 <li><a href="">Accueil</a></li>
@@ -19,19 +19,32 @@
                 <li><a href="#section-competences">Compétences</a></li>
                 <li><a href="#section-projets">Projets</a></li>
                 <li><a href="#container-footer">Contact</a></li>
-
                 <i class="fa-solid fa-music" ></i>
                 <i id="play" class="fa-solid fa-play"></i>
             </ul>
+        </nav>
+        <nav class="navbar-mobile">
+            <h1>CyberFolio</h1>
+            <i class="fas fa-bars"></i>
+            <div class="modal">
+                <div class="navbar-mobile-list">
+                    <ul>
+                        <li><a href="">Accueil</a></li>
+                        <li><a href="#section-profil">Profil</a></li>
+                        <li><a href="#section-competences">Compétences</a></li>
+                        <li><a href="#section-projets">Projets</a></li>
+                        <li><a href="#container-footer">Contact</a></li>
+        
+                        <i class="fa-solid fa-music" ></i>
+                        <i id="play" class="fa-solid fa-play"></i>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <div class="name">
             <h1>(Eric Oriez)</h1>
             <h2>(Développeur Web Junior)</h2>
         </div>
-        <!-- <div class="oeil">
-            <img class="fond-oeil" src="./img/Group145.png" alt="">
-            <img class="fond-pupille" src="./img/pupille-rose.png" alt="">
-        </div> -->
     </header>
 
     <main>
@@ -65,7 +78,6 @@
                 <h1 class="titre">
                     (Mes Projets)
                 </h1>
-
                 <div class="grid-projets">
                     <a href="https://quizrae.promo-105.codeur.online/">
                         <img src="img/img-projets/2022-05-12 16_44_04-Window.png" alt="">
@@ -112,19 +124,15 @@
                 </a>
             </div> 
         </div>
-
         <div class="modal-container">
             <div class="modal-details">
                 <!-- img du C.V-->
                 <img src="img/C.V.png" alt="">
-                <!-- icone pour refermer la modale -->
                 <i class="fas fa-times"></i>
             </div>
         </div>
-
     </footer>
     
     <script src="script.js"></script>
-    
 </body>
 </html>
