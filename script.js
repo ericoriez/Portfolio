@@ -22,7 +22,7 @@ let figures = document.querySelectorAll('figure > img');
 // ****** animation au scroll ****** //
 window.addEventListener('scroll', execute) 
 function execute(e){
-    // console.log(window.pageYOffset);
+    e.preventDefault();
     let hauteur = document.documentElement.scrollTop;
     let innerHeight = window.innerHeight
 
@@ -34,7 +34,7 @@ function execute(e){
             lettre++;
             if (lettre < text.length) {
                 lancer = false
-                window.setTimeout(write, 20);
+                window.setTimeout(write, 8);
             }
         };
         Write(); 
@@ -49,27 +49,12 @@ function execute(e){
     let projets = document.querySelectorAll('.grid-projets > a ');
     if ( hauteur >= innerHeight * 3) {
         for (t = 0; t < projets.length; t++) {
-            projets[t].style.animation = 'roll-in-right 0.7s  ease-out both';
+            projets[t].style.animation = 'slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
         }
     }
 }
 
-//  ******** Pluie ************ //
-let footer = document.querySelector('#container-footer');
-let drop_count = 800;
-for (let i = 0; i < drop_count; i++) {
-    let span = document.createElement('span');
-    span.classList.add('rain');
-    footer.appendChild(span);
-    span.style.left = Math.random()*footer.getBoundingClientRect().width - 5 + 'px';
-    span.style.top = Math.random()* - 0 + 'px';
-    span.style.width = Math.random()*1.5 + 'px';
-    span.style.animationDuration = Math.random()* 20 + 's';
-    span.style.animationDelay = Math.random()* - 20 + 's';
-}
-
 // ********* Modal C.V ********* //
-
 const modal = document.querySelector('.modal-container');
 const icone = document.querySelector('.fa-times');
 const btnCV = document.querySelector('.fa-id-card');
@@ -80,8 +65,6 @@ btnCV.addEventListener('click', () => {
         modal.style.display = "none";
     })
 })
-
-
 
 // ************ AUDIO ********* //
 let verif = false;
@@ -105,10 +88,9 @@ play.addEventListener('click', (e) =>{
         audio.pause();
         verif = false;
     }
-
 })
 
-
+// ************************ MODAL BURGER ******************** //
 // l'icône burger
 const burger = document.querySelector('.navbar-mobile i');
 

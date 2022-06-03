@@ -58,7 +58,7 @@ html{
       nav {
         z-index: 1;
         height: 100%;
-        width: 16vw;
+        width: 15vw;
         align-items: center;
         background-color: #009ef34d;
         position: fixed;
@@ -207,6 +207,7 @@ html{
                       grid-gap: 2vw;
                       width: 40vw;
                       height: 60%;
+                      animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                       a{
                         width: 100%;
                         height: 25vh;
@@ -253,28 +254,14 @@ html{
             width: 100%;
             display: flex;
             justify-content: center;
-            // align-items: center;
-            background-image:url('../img/samurai.jpg');
+            background-image:url('../img/keyboard-g14c2c973e_1920.jpg');
             background-size : 100% 100%;
             background-position: center;
-            .rain {
-              width: 2px;
-              height: 40px;
-              background: linear-gradient(transparent, rgba(175, 175, 175, 0.311));
-                position: absolute;
-                left:0px;
-                top: 50px;
-                bottom: 0;
-                border-bottom-left-radius: 14px;
-                border-top-right-radius: 14px;
-                animation: pluie linear infinite;
-                animation-duration: 20s;
-            }
             h1 {
               color: white;
               text-align: center;
               position: relative;
-              top: 30vh;
+              top: 20vh;
               margin-bottom: 10vh;
               font-size: 2vw;
               font-family: 'barcaderegular';
@@ -287,7 +274,7 @@ html{
               text-align: center;
               border-radius: 5px;
               font-size: 8vh;
-              bottom: 30%;
+              bottom: 40%;
               width: 30%;
               z-index: 1;
               a{
@@ -346,6 +333,19 @@ html{
 }
 
 // ***************************************** KEYFRAMES ************************************************ //
+
+
+ // animation slide-in-bottom
+ @keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 // animation images projets
 @keyframes glissement {
@@ -551,29 +551,6 @@ html{
   }
 }
 
-// animation roll de la gauche au centre des images projets 
-@keyframes roll-in-right {
-  0% {
-    transform: translateX(800px) rotate(540deg);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0) rotate(0deg);
-    opacity: 1;
-  }
-}
-
-// animation pluie footer
-@keyframes pluie {
-  0%{
-    transform: rotate(-30deg);
-  }
-  100%{
-    transform: rotate(-10deg);
-    top: calc(100% - 10px);
-  }
-}
-
 // *************************************** MEDIA QUERIES *********************************************//
 
 // max-width 1024px
@@ -660,7 +637,7 @@ html{
   }
 
   html body main #section-profil div p{
-    font-size: 3.5vw;
+    font-size: 3rem;
     width: 90%;
   }
 
@@ -673,9 +650,8 @@ html{
     margin-bottom: 5vh;
   }
   html body main #section-competences div figure img {
-      width: 12vw;
-      opacity: 0;
-      margin: 2vw;
+    width: 10rem;
+    margin: 20px;
   }
 
   // section projets
@@ -706,12 +682,11 @@ html{
   }
   html body footer #container-footer .contact-reseau {
     flex-direction: column;
-    font-size: 8vh;
-    bottom: 5vh;
+    bottom: 35%;
     width: 70%;
   }
   html body footer #container-footer .contact-reseau a {
-    font-size: 11vw;
+    font-size: 6rem;
   }
   html body footer .modal-container .modal-details {
     width: 100%;
@@ -764,22 +739,17 @@ html{
        }
      
      }
-    //  .fa-solid.fa-music{
-    //    font-size: 3vw;
-    //    margin: 2vw;
-    //    margin-top: 0;
-    //  }
-    //  .fa-solid.fa-play{
-    //    font-size: 3vw;
-    //    margin-top: 0;
+     .fa-solid.fa-music{
+       font-size: 2.1rem;
+     }
+     .fa-solid.fa-play{
+       font-size: 2.1rem;
      
-    //  }
-    //  .fa-solid.fa-pause{
-    //    font-size: 3vw;
-    //    margin: 0;
-    //    margin-top: 0;
+     }
+     .fa-solid.fa-pause{
+       font-size: 2.1rem;
    
-    //  }
+     }
    }
   }
 
@@ -801,7 +771,7 @@ html{
  }
 
  html body main #section-profil div p{
-   font-size: 4vw;
+   font-size: 2.7rem;
    width: 90%;
  }
 
@@ -825,6 +795,7 @@ html{
  html body main #section-projets div .grid-projets {
    width: 80vw;
    height: 30vh;
+   
    a{
      height: 15vh;
      .h3-projets{
@@ -842,12 +813,11 @@ html{
  }
  html body footer #container-footer .contact-reseau {
    flex-direction: column;
-   font-size: 8vh;
-   bottom: 5%;
+   bottom: 35%;
    width: 70%;
  }
  html body footer #container-footer .contact-reseau a {
-   font-size: 15vw;
+   font-size: 6rem;
  }
  html body footer .modal-container .modal-details {
    width: 100%;
@@ -868,7 +838,7 @@ html{
  }
 }
 
-// max-width 425px
+// max-width 414px
 @media screen and (max-width: 414px) {
 
   // section accueil
@@ -902,19 +872,14 @@ html{
       
       }
       .fa-solid.fa-music{
-        font-size: 3vw;
-        margin: 2vw;
-        margin-top: 0;
+        font-size: 1.9rem;
       }
       .fa-solid.fa-play{
-        font-size: 3vw;
-        margin-top: 0;
+        font-size: 1.9rem;
       
       }
       .fa-solid.fa-pause{
-        font-size: 3vw;
-        margin: 0;
-        margin-top: 0;
+        font-size: 1.9rem;
     
       }
     }
@@ -938,7 +903,7 @@ html{
   }
 
   html body main #section-profil div p{
-    font-size: 5vw;
+    font-size: 2.5rem;
     width: 90%;
   }
 
@@ -950,9 +915,8 @@ html{
     font-size: 7vw;
   }
   html body main #section-competences div figure img {
-      width: 20vw;
-      opacity: 0;
-      margin: 2vw;
+      width: 10rem;
+      margin: 15px;
   }
 
   // section projets
@@ -962,6 +926,8 @@ html{
   html body main #section-projets div .grid-projets {
     width: 80vw;
     height: 30vh;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
     a{
       height: 15vh;
       .h3-projets{
@@ -979,12 +945,11 @@ html{
   }
   html body footer #container-footer .contact-reseau {
     flex-direction: column;
-    font-size: 8vh;
-    bottom: 10%;
+    bottom: 35%;
     width: 70%;
   }
   html body footer #container-footer .contact-reseau a {
-    font-size: 15vw;
+    font-size: 6rem;
   }
   html body footer .modal-container .modal-details {
     width: 100%;
@@ -1005,7 +970,7 @@ html{
   }
 }
 
-// max-width 375px
+// max-width 390px
 @media screen and (max-width: 390px) {
 
   // section accueil
@@ -1039,19 +1004,14 @@ html{
      
       }
       .fa-solid.fa-music{
-        font-size: 3vw;
-        margin: 2vw;
-        margin-top: 0;
+        font-size: 1.7rem;
       }
       .fa-solid.fa-play{
-        font-size: 3vw;
-        margin-top: 0;
+        font-size: 1.7rem;
     
       }
       .fa-solid.fa-pause{
-        font-size: 3vw;
-        margin: 0;
-        margin-top: 0;
+        font-size: 1.7rem;
    
       }
     }
@@ -1076,7 +1036,7 @@ html{
   }
 
   html body main #section-profil div p{
-    font-size: 5vw;
+    font-size: 2.3rem;
     width: 90%;
   }
 
@@ -1090,9 +1050,8 @@ html{
 
   }
   html body main #section-competences div figure img {
-      width: 20vw;
-      opacity: 0;
-      margin: 2vw;
+    width: 9rem;
+    margin: 15px;
   }
 
   // section projets
@@ -1124,12 +1083,11 @@ html{
   }
   html body footer #container-footer .contact-reseau {
     flex-direction: column;
-    font-size: 8vh;
-    bottom: 2%;
+    bottom: 35%;
     width: 70%;
   }
   html body footer #container-footer .contact-reseau a {
-    font-size: 17vw;
+    font-size: 6rem;
   }
   html body footer .modal-container .modal-details {
     width: 100%;
@@ -1184,19 +1142,14 @@ html{
        
         }
         .fa-solid.fa-music{
-          font-size: 3vw;
-          margin: 2vw;
-          margin-top: 0;
+          font-size: 1.5rem;
         }
         .fa-solid.fa-play{
-          font-size: 3vw;
-          margin-top: 0;
+          font-size: 1.5rem;
           
         }
         .fa-solid.fa-pause{
-          font-size: 3vw;
-          margin: 0;
-          margin-top: 0;
+          font-size: 1.5rem;
         
         }
       }
@@ -1221,7 +1174,7 @@ html{
     }
 
     html body main #section-profil div p{
-      font-size: 5vw;
+      font-size: 2.1rem;
       width: 90%;
     }
 
@@ -1235,9 +1188,8 @@ html{
 
     }
     html body main #section-competences div figure img {
-        width: 26vw;
-        opacity: 0;
-        margin: 2vw;
+      width: 7rem;
+      margin: 15px;
     }
 
     // section projets
@@ -1267,12 +1219,11 @@ html{
     }
     html body footer #container-footer .contact-reseau {
       flex-direction: column;
-      font-size: 8vh;
-      bottom: 15%;
+      bottom: 35%;
       width: 70%;
     }
     html body footer #container-footer .contact-reseau a {
-      font-size: 18vw;
+      font-size: 6rem;
     }
     html body footer .modal-container .modal-details {
       width: 100%;
@@ -1329,7 +1280,7 @@ html{
   margin: 5vh;
 }
 .navbar-mobile .navbar-mobile-list a {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 800;
   color: white;
   padding: 1rem;
