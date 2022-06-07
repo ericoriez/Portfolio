@@ -852,7 +852,7 @@ html body footer .modal-container .modal-details .fa-times:hover {
     height: 30vh;
   }
   html body main #section-projets div .grid-projets a {
-    height: 15vh;
+    height: 20vh;
   }
   html body main #section-projets div .grid-projets a .h3-projets {
     font-size: 2vh;
@@ -932,8 +932,8 @@ html body footer .modal-container .modal-details .fa-times:hover {
     margin-bottom: 5vh;
   }
   html body main #section-competences div figure img {
-    width: 10rem;
-    margin: 20px;
+    width: 8rem;
+    margin: 24px;
   }
   html body main #section-projets div h1 {
     font-size: 5vw;
@@ -961,11 +961,11 @@ html body footer .modal-container .modal-details .fa-times:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    bottom: 35%;
+    top: 30%;
     width: 70%;
   }
   html body footer #container-footer .contact-reseau a {
-    font-size: 6rem;
+    font-size: 4.8rem;
   }
   html body footer .modal-container .modal-details {
     width: 100%;
@@ -1048,8 +1048,8 @@ html body footer .modal-container .modal-details .fa-times:hover {
     font-size: 7vw;
   }
   html body main #section-competences div figure img {
-    width: 18vw;
-    margin: 5vw;
+    width: 8rem;
+    margin: 25px;
   }
   html body main #section-projets div h1 {
     font-size: 7vw;
@@ -1075,11 +1075,11 @@ html body footer .modal-container .modal-details .fa-times:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    bottom: 35%;
+    top: 30%;
     width: 70%;
   }
   html body footer #container-footer .contact-reseau a {
-    font-size: 6rem;
+    font-size: 4.8rem;
   }
   html body footer .modal-container .modal-details {
     width: 100%;
@@ -1173,8 +1173,8 @@ html body footer .modal-container .modal-details .fa-times:hover {
     font-size: 7vw;
   }
   html body main #section-competences div figure img {
-    width: 10rem;
-    margin: 15px;
+    width: 8rem;
+    margin: 22px;
   }
   html body main #section-projets div h1 {
     font-size: 7vw;
@@ -1203,11 +1203,11 @@ html body footer .modal-container .modal-details .fa-times:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    bottom: 35%;
+    top: 27%;
     width: 70%;
   }
   html body footer #container-footer .contact-reseau a {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   html body footer .modal-container .modal-details {
     width: 100%;
@@ -1302,7 +1302,7 @@ html body footer .modal-container .modal-details .fa-times:hover {
     margin-bottom: 5vh;
   }
   html body main #section-competences div figure img {
-    width: 9rem;
+    width: 8rem;
     margin: 15px;
   }
   html body main #section-projets div h1 {
@@ -1333,11 +1333,11 @@ html body footer .modal-container .modal-details .fa-times:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    bottom: 35%;
+    top: 26%;
     width: 70%;
   }
   html body footer #container-footer .contact-reseau a {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   html body footer .modal-container .modal-details {
     width: 100%;
@@ -1463,11 +1463,11 @@ html body footer .modal-container .modal-details .fa-times:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    bottom: 35%;
+    top: 25%;
     width: 70%;
   }
   html body footer #container-footer .contact-reseau a {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   html body footer .modal-container .modal-details {
     width: 100%;
@@ -1552,29 +1552,13 @@ html body footer .modal-container .modal-details .fa-times:hover {
   top: 0;
 }
 
-/*Media queries*/
+/*Media queries navbar mobile*/
 @media screen and (max-width: 768px) {
   .navbar-desktop {
     display: none;
   }
   .navbar-mobile {
     display: block;
-  }
-  .navbar-mobile .fa-music {
-    position: fixed;
-    z-index: 9999;
-    top: 4vh;
-    right: 8vw;
-    font-size: 3rem;
-    color: white;
-  }
-  .navbar-mobile .fa-play {
-    position: fixed;
-    z-index: 9999;
-    top: 4vh;
-    right: 5vw;
-    font-size: 3rem;
-    color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */

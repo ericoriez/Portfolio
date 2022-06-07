@@ -68,7 +68,7 @@ btnCV.addEventListener('click', () => {
 
 // ************ AUDIO ********* //
 let verif = false;
-const play = document.getElementById('play');
+const play = document.querySelector('.fa-play');
 const stop = document.querySelector('.fa-pause')
 const audio = new Audio("./audio/Rich-in-the-80s-DivKid.mp3");
 play.addEventListener('click', (e) =>{
