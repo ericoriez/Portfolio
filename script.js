@@ -13,7 +13,7 @@ if (titre.length > 0) {
 }
 
 // animation lettre par lettre du texte profil
-let text = "Bienvenu sur mon portfolio ! Comme beaucoup de personne, j'ai profité de la situation du covid pour suivre une formation et me réorienté vers l'une de mes passions, le web développement. Aujourd'hui formé en full stack, je travaille principalement avec Javascript et PhP, mais reste toujours ouvert à de nouvelles technologies. Enthousiaste et toujours à l'écoute, je m'adapte aux différents projets et à leurs challenges. Vous avez un projet en tête? Retrouvez mes contacts en bas de page!";
+let text = "Bienvenue sur mon portfolio ! Comme beaucoup de personne, j'ai profité de la situation du covid pour suivre une formation et me réorienté vers l'une de mes passions, le web développement. Aujourd'hui formé en full stack, je travaille principalement avec Javascript et PhP, mais reste toujours ouvert à de nouvelles technologies. Enthousiaste et toujours à l'écoute, je m'adapte aux différents projets et à leurs challenges. Vous avez un projet en tête? Retrouvez mes contacts en bas de page!";
 let lettre = 0;
 let lancer = true;
 let figures = document.querySelectorAll('figure > img');
